@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using AlgosStudy.Sorting;
 
 namespace AlgosStudy
 {
@@ -14,6 +15,8 @@ namespace AlgosStudy
       Console.WriteLine("Input Array: " + PrintArray(inputVals));
       InsertionSort insSort = new InsertionSort();
       Console.WriteLine("After Insertion Sort: " + PrintArray(insSort.Sort(inputVals)));
+      SelectionSort selSort = new SelectionSort();
+      Console.WriteLine("After Selection Sort: " + PrintArray(selSort.Sort(inputVals)));
       Console.WriteLine("Press any key to exit");
       Console.ReadKey();
     }
