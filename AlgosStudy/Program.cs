@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Diagnostics;
 using AlgosStudy.Sorting;
+using AlgosStudy.DataStructures;
 
 namespace AlgosStudy
 {
@@ -11,12 +13,31 @@ namespace AlgosStudy
   {
     static void Main(string[] args)
     {
-      int[] inputVals = new int[] { 7, 3, -1, 5, 6, 4, 0 };
-      Console.WriteLine("Input Array: " + PrintArray(inputVals));
-      InsertionSort insSort = new InsertionSort();
-      Console.WriteLine("After Insertion Sort: " + PrintArray(insSort.Sort(inputVals)));
-      SelectionSort selSort = new SelectionSort();
-      Console.WriteLine("After Selection Sort: " + PrintArray(selSort.Sort(inputVals)));
+      List<int> tempArr = new List<int>();
+      Random rand = new Random();
+      int j = 0;
+      while (++j < 10000000)
+      {
+        tempArr.Add(rand.Next(Int32.MinValue, Int32.MaxValue));
+      }
+
+      var inputVals = tempArr.ToArray();
+      //Console.WriteLine("Input Array: " + PrintArray(inputVals));
+
+      Stopwatch watch = new Stopwatch();
+      MergeSort sort = new MergeSort();
+      watch.Start();
+      //Console.WriteLine(PrintArray(sort.Sort(inputVals)));
+      sort.Sort(inputVals);
+      watch.Stop();
+      Console.WriteLine("Time taken for sort is: " + watch.Elapsed.TotalSeconds + " seconds");
+
+      Console.WriteLine("Sorting with .NET default implementation");
+      watch.Restart();
+      Array.Sort(inputVals);
+      watch.Stop();
+      Console.WriteLine("Time taken for sort is: " + watch.Elapsed.TotalSeconds + " seconds");
+
       Console.WriteLine("Press any key to exit");
       Console.ReadKey();
     }
@@ -24,7 +45,7 @@ namespace AlgosStudy
     private static string PrintArray(int[] inVals)
     {
       StringBuilder temp = new StringBuilder();
-      foreach(var val in inVals)
+      foreach (var val in inVals)
       {
         temp.Append(val + " ");
       }
