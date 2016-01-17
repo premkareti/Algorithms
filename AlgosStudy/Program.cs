@@ -25,18 +25,16 @@ namespace AlgosStudy
       //Console.WriteLine("Input Array: " + PrintArray(inputVals));
 
       Stopwatch watch = new Stopwatch();
-      MergeSort sort = new MergeSort();
       watch.Start();
-      //Console.WriteLine(PrintArray(sort.Sort(inputVals)));
+      QuickSort sort = new QuickSort();
       sort.Sort(inputVals);
       watch.Stop();
-      Console.WriteLine("Time taken for sort is: " + watch.Elapsed.TotalSeconds + " seconds");
+      Console.WriteLine("Time taken for my quicksort is: " + watch.Elapsed.TotalSeconds + " seconds");
 
-      Console.WriteLine("Sorting with .NET default implementation");
       watch.Restart();
       Array.Sort(inputVals);
       watch.Stop();
-      Console.WriteLine("Time taken for sort is: " + watch.Elapsed.TotalSeconds + " seconds");
+      Console.WriteLine("Time taken for .NET default sort is: " + watch.Elapsed.TotalSeconds + " seconds");
 
       Console.WriteLine("Press any key to exit");
       Console.ReadKey();
