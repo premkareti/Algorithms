@@ -14,8 +14,10 @@ namespace AlgosStudy
   {
     static void Main(string[] args)
     {
-      NumOfSetBits temp = new NumOfSetBits();
-      Console.WriteLine(temp.HammingWeight(0));
+      int[] arr = new int[] { 1,2 };
+      RotateArray temp = new RotateArray();
+      temp.Rotate(arr, 3);
+      Console.WriteLine(PrintArray(arr));
       Console.WriteLine("Press any key to exit");
       Console.ReadKey();
     }

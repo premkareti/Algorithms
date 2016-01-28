@@ -45,12 +45,15 @@
     <Compile Include="DataStructures\Graph.cs" />
     <Compile Include="DataStructures\Heap.cs" />
     <Compile Include="LeetCode\AddDigits.cs" />
+    <Compile Include="LeetCode\AtoI.cs" />
     <Compile Include="LeetCode\ContainsDup.cs" />
     <Compile Include="LeetCode\DelNodeLinkedList.cs" />
     <Compile Include="LeetCode\MajorityElm.cs" />
     <Compile Include="LeetCode\MoveZeroes.cs" />
     <Compile Include="LeetCode\NimGame.cs" />
     <Compile Include="LeetCode\NumOfSetBits.cs" />
+    <Compile Include="LeetCode\RotateArray.cs" />
+    <Compile Include="LeetCode\VersionCompare.cs" />
     <Compile Include="Sorting\InsertionSort.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
