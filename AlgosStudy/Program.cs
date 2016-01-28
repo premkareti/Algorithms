@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Diagnostics;
 using AlgosStudy.Sorting;
 using AlgosStudy.DataStructures;
+using AlgosStudy.LeetCode;
 
 namespace AlgosStudy
 {
@@ -13,29 +14,8 @@ namespace AlgosStudy
   {
     static void Main(string[] args)
     {
-      List<int> tempArr = new List<int>();
-      Random rand = new Random();
-      int j = 0;
-      while (++j < 10000000)
-      {
-        tempArr.Add(rand.Next(Int32.MinValue, Int32.MaxValue));
-      }
-
-      var inputVals = tempArr.ToArray();
-      //Console.WriteLine("Input Array: " + PrintArray(inputVals));
-
-      Stopwatch watch = new Stopwatch();
-      watch.Start();
-      QuickSort sort = new QuickSort();
-      sort.Sort(inputVals);
-      watch.Stop();
-      Console.WriteLine("Time taken for my quicksort is: " + watch.Elapsed.TotalSeconds + " seconds");
-
-      watch.Restart();
-      Array.Sort(inputVals);
-      watch.Stop();
-      Console.WriteLine("Time taken for .NET default sort is: " + watch.Elapsed.TotalSeconds + " seconds");
-
+      NumOfSetBits temp = new NumOfSetBits();
+      Console.WriteLine(temp.HammingWeight(0));
       Console.WriteLine("Press any key to exit");
       Console.ReadKey();
     }
