@@ -14,10 +14,8 @@ namespace AlgosStudy
   {
     static void Main(string[] args)
     {
-      int[] arr = new int[] { 1,2 };
-      RotateArray temp = new RotateArray();
-      temp.Rotate(arr, 3);
-      Console.WriteLine(PrintArray(arr));
+      CountPrimesOfNum temp = new CountPrimesOfNum();
+      Console.WriteLine(temp.CountPrimes(102));
       Console.WriteLine("Press any key to exit");
       Console.ReadKey();
     }
