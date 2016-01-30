@@ -7,6 +7,7 @@ using System.Diagnostics;
 using AlgosStudy.Sorting;
 using AlgosStudy.DataStructures;
 using AlgosStudy.LeetCode;
+using AlgosStudy.GeeksForGeeks;
 
 namespace AlgosStudy
 {
@@ -14,8 +15,13 @@ namespace AlgosStudy
   {
     static void Main(string[] args)
     {
-      CountPrimesOfNum temp = new CountPrimesOfNum();
-      Console.WriteLine(temp.CountPrimes(102));
+      Tree temp = new Tree();
+      var root = temp.CreateTree(new object[] { 10, 12, 13, null, null, 14, null });
+      PrintAncestor t = new PrintAncestor();
+      StringBuilder s = new StringBuilder();
+      t.Display(root, 12, s);
+      Console.WriteLine(s);
+
       Console.WriteLine("Press any key to exit");
       Console.ReadKey();
     }

@@ -44,6 +44,11 @@
   <ItemGroup>
     <Compile Include="DataStructures\Graph.cs" />
     <Compile Include="DataStructures\Heap.cs" />
+    <Compile Include="DataStructures\Tree.cs" />
+    <Compile Include="GeeksForGeeks\ClosestLeaf.cs" />
+    <Compile Include="GeeksForGeeks\InorderWithoutRecursion.cs" />
+    <Compile Include="GeeksForGeeks\PrintAncestor.cs" />
+    <Compile Include="GeeksForGeeks\ReverStackRecursion.cs" />
     <Compile Include="LeetCode\AddDigits.cs" />
     <Compile Include="LeetCode\AtoI.cs" />
     <Compile Include="LeetCode\ContainsDup.cs" />
@@ -69,9 +74,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="GeeksForGeeks\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
