@@ -8,6 +8,7 @@ using AlgosStudy.Sorting;
 using AlgosStudy.DataStructures;
 using AlgosStudy.LeetCode;
 using AlgosStudy.GeeksForGeeks;
+using AlgosStudy.HackerEarth;
 
 namespace AlgosStudy
 {
@@ -15,12 +16,8 @@ namespace AlgosStudy
   {
     static void Main(string[] args)
     {
-      Tree temp = new Tree();
-      var root = temp.CreateTree(new object[] { 10, 12, 13, null, null, 14, null });
-      PrintAncestor t = new PrintAncestor();
-      StringBuilder s = new StringBuilder();
-      t.Display(root, 12, s);
-      Console.WriteLine(s);
+      DpSuperNaturalSquad temp = new DpSuperNaturalSquad();
+      temp.NumberOfPartitions();
 
       Console.WriteLine("Press any key to exit");
       Console.ReadKey();

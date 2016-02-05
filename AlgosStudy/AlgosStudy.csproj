@@ -49,6 +49,8 @@
     <Compile Include="GeeksForGeeks\InorderWithoutRecursion.cs" />
     <Compile Include="GeeksForGeeks\PrintAncestor.cs" />
     <Compile Include="GeeksForGeeks\ReverStackRecursion.cs" />
+    <Compile Include="HackerEarth\DpSuperNaturalSquad.cs" />
+    <Compile Include="HackerEarth\RelativePrime.cs" />
     <Compile Include="LeetCode\AddDigits.cs" />
     <Compile Include="LeetCode\AtoI.cs" />
     <Compile Include="LeetCode\ContainsDup.cs" />
