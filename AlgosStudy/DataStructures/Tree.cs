@@ -32,9 +32,9 @@ namespace AlgosStudy.DataStructures
       {
         int left = (2 * i) + 1;
         int right = (2 * i) + 2;
-        if (left < len)
+        if (left < len && treeMap[i] != null)
           treeMap[i].Left = treeMap[left];
-        if (right < len)
+        if (right < len && treeMap[i] != null)
           treeMap[i].Right = treeMap[right];
 
         if (i == 0)

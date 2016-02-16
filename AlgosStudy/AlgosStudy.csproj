@@ -44,6 +44,7 @@
   <ItemGroup>
     <Compile Include="DataStructures\Graph.cs" />
     <Compile Include="DataStructures\Heap.cs" />
+    <Compile Include="DataStructures\LinkedList.cs" />
     <Compile Include="DataStructures\Tree.cs" />
     <Compile Include="GeeksForGeeks\ClosestLeaf.cs" />
     <Compile Include="GeeksForGeeks\InorderWithoutRecursion.cs" />
@@ -71,6 +72,9 @@
     <Compile Include="Sorting\MergeSort.cs" />
     <Compile Include="Sorting\QuickSort.cs" />
     <Compile Include="Sorting\SelectionSort.cs" />
+    <Compile Include="TutorialHorizon\DeepestNode.cs" />
+    <Compile Include="TutorialHorizon\LeftLeavesSum.cs" />
+    <Compile Include="TutorialHorizon\ReverseLinkedList.cs" />
     <Compile Include="Utilities.cs" />
   </ItemGroup>
   <ItemGroup>
