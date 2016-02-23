@@ -17,10 +17,54 @@ namespace AlgosStudy
   {
     static void Main(string[] args)
     {
-      //Console.WriteLine(Partition(new int[]{3,8,2,5,1,7,6}));
-      Console.WriteLine(Partition(new int[] { 3 }));
+      PrintNumbers("IDDI");
+
       Console.WriteLine("Press any key to exit");
       Console.ReadKey();
+    }
+
+    private static void PrintNumbers(string str)
+    {
+      if (str.Length == 0)
+      {
+        return;
+      }
+      StringBuilder temp = new StringBuilder();
+      int dCount = 0;
+      for (int i = 0; i < str.Length; i++)
+      {
+        if (str[i] == 'D')
+        {
+          dCount++;
+        }
+      }
+      List<int> nums = new List<int>();
+      for (int i = 0; i <= str.Length; i++)
+      {
+        nums.Add(i + 1);
+      }
+
+      //cout << endl << nums[dCount] << " ";
+      temp.Append(nums[dCount] + " ");
+      nums[dCount] = -1;
+      int iCount = dCount + 1;
+      dCount--;
+      for (int i = 0; i < str.Length; i++)
+      {
+        if (str[i] == 'I')
+        {
+          //cout << nums[iCount] << " ";
+          temp.Append(nums[iCount] + " ");
+          nums[iCount++] = -1;
+        }
+        else
+        {
+          //cout << nums[dCount] << " ";
+          temp.Append(nums[dCount] + " ");
+          nums[dCount--] = -1;
+        }
+      }
+      Console.WriteLine(temp);
     }
 
     private static int Partition(int[] val)

@@ -47,6 +47,8 @@
     <Compile Include="DataStructures\LinkedList.cs" />
     <Compile Include="DataStructures\Tree.cs" />
     <Compile Include="GeeksForGeeks\ClosestLeaf.cs" />
+    <Compile Include="GeeksForGeeks\FindDuplicatesInArray.cs" />
+    <Compile Include="GeeksForGeeks\InorderNoStackNoRecursion.cs" />
     <Compile Include="GeeksForGeeks\InorderWithoutRecursion.cs" />
     <Compile Include="GeeksForGeeks\PrintAncestor.cs" />
     <Compile Include="GeeksForGeeks\ReverStackRecursion.cs" />
@@ -62,6 +64,7 @@
     <Compile Include="LeetCode\MoveZeroes.cs" />
     <Compile Include="LeetCode\NimGame.cs" />
     <Compile Include="LeetCode\NumOfSetBits.cs" />
+    <Compile Include="LeetCode\PostOrderTraversalNoRecursion.cs" />
     <Compile Include="LeetCode\ReverseBits.cs" />
     <Compile Include="LeetCode\ReverseInt.cs" />
     <Compile Include="LeetCode\RotateArray.cs" />
