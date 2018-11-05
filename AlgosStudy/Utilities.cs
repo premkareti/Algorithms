@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace AlgosStudy
 {
+  // Helper class
   public class Utilities
   {
     public static long PowerOfNum(int baseNum, int power)
